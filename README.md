@@ -1,6 +1,6 @@
 # Mobilab-AgroTIC
 
-Change Grafana logo : 
+## Change Grafana logo : 
 ```
 cd /usr/share/grafana/public/img/
 ```
