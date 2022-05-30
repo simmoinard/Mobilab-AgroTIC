@@ -60,8 +60,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
 ### Influx
 
-
-    ~~sudo apt-get update~~
+   ~~sudo apt-get update
     sudo apt-get upgrade
     sudo apt-get install apt-transport-https
     sudo apt-get install curl
@@ -76,9 +75,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
 ### Grafana
 
- [PAS NECESSAIRE]
-
- sudo apt-get install apt-transport-https curl
+ ~~sudo apt-get install apt-transport-https curl
  
     curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
     echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
@@ -87,8 +84,6 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
     
     sudo systemctl enable grafana-server.service 
     sudo systemctl start influxdb.service
-
-
 
 ### Prometheus
 
