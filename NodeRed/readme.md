@@ -36,3 +36,7 @@ Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à 
             permissions: "*"
         }]
     },
+
+## Installer un plugin NodeRed
+
+Les plugins de NodeRed sont disponibles dans la "palette" située dans le menu (3 barres horizontales en haut à droite), puis dans Manage Palette (accessible également via le raccourci ```Alt``` + ```↑``` + ```P```
