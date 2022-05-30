@@ -22,7 +22,7 @@ Paramétrer comme ceci :
 Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte SD dans le Raspberry, puis brancher l'alimentation du Raspberry.
 
 ### Se connecter a distance au Raspberry
-appuyer sur la touche Windows + r 
+appuyer sur la touche ```Windows``` + ```R``` puis entrer ```cmd``` dans la barre de recherche
 
 ![image](https://user-images.githubusercontent.com/24956276/170989133-e635ebc2-8237-4ab5-8e5d-089efeb00b25.png)
 
@@ -39,7 +39,7 @@ L'auto-complétion se fait en appuyant sur tab. C'est très pratique.
  - ```cd ..``` : revenir dans le répértoire parent
  - ```ls -l``` : lister les documents présents dans le répértoire courant avec plus d'informations (grâce au flag "-l")
  - ```mkdir``` : Créer un dossier
- - ```nano fichier.txt``` : Créer un fichier 'fichier.txt'. Pour sortir de l'éditeur, Ctrl+X 
+ - ```nano fichier.txt``` : Créer un fichier 'fichier.txt'. Pour sortir de l'éditeur, ```Ctrl```+```X```, puis ```Y```, puis ```Entrée``` 
  - ```sudo reboot``` : Redémarrer le Raspberry (sudo est pour Super User DO : on se met en mode admin, après avoir renseigné le mot de passe)
 
 ## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
@@ -66,6 +66,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
     wget https://github.com/prometheus/prometheus/releases/download/v2.35.0/prometheus-2.35.0.linux-amd64.tar.gz
     tar xzf prometheus-2.35.0.linux-amd64.tar.gz
+    
  On nettoie ensuite l'installation :
  
     mv prometheus-2.35.0.linux-amd64/ prometheus/
@@ -78,7 +79,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
  La fenêtre d'éditeur de texte "nano" s'ouvre. On copie ceci (clic-droit pour coller dans nano) :
  
  ```
- [Unit]
+[Unit]
 Description=Prometheus Server
 Documentation=https://prometheus.io/docs/introduction/overview/
 After=network-online.target
@@ -95,4 +96,13 @@ ExecStart=/home/pi/prometheus/prometheus \
 WantedBy=multi-user.target
 ```
 
-sd
+Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
+
+On fini par activer ce service : 
+
+    sudo systemctl enable prometheus
+    sudo systemctl start prometheus
+    sudo systemctl enable prometheus
+
+Prometheus est alors accessible depuis n'importe quel ordinateur dans le réseau WiFi du Raspberry ! 
+L'adresse URL est [IP]:9090 (par exemple, 192.168.104.163:9090)
