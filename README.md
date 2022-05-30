@@ -62,7 +62,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
 ### Prometheus
 
-[Prometheus](https://prometheus.io/download/) est une base de données temporelle
+[Prometheus](https://prometheus.io/download/) est une base de données temporelle. La suite est prise de ce [site](https://pimylifeup.com/raspberry-pi-prometheus/)
 
     wget https://github.com/prometheus/prometheus/releases/download/v2.35.0/prometheus-2.35.0.linux-amd64.tar.gz
     tar xzf prometheus-2.35.0.linux-amd64.tar.gz
