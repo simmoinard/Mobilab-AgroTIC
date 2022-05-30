@@ -32,6 +32,8 @@ Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue d
 
 ### Fonctions de base : 
 
+L'auto-complétion se fait en appuyant sur tab. C'est très pratique.
+
  - ```ls``` : lister les documents présents dans le répértoire courant
  - ```cd``` : Changer de répértoire
  - ```cd ..``` : revenir dans le répértoire parent
@@ -41,6 +43,11 @@ Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue d
  - ```sudo reboot``` : Redémarrer le Raspberry (sudo est pour Super User DO : on se met en mode admin, après avoir renseigné le mot de passe)
 
 ## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
+
+On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels.
+
+    sudo apt update
+    sudo apt full-upgrade
 
 ### NodeRed
 
@@ -52,3 +59,35 @@ On installe via le script officiel, puis on modifie le sysyemctl pour lancer Nod
     
 NodeRed est alors accessible depuis n'importe quel ordinateur dans le réseau WiFi du Raspberry ! 
 L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
+
+### Prometheus
+
+[Prometheus](https://prometheus.io/download/) est une base de données temporelle
+
+    wget https://github.com/prometheus/prometheus/releases/download/v2.35.0/prometheus-2.35.0.linux-amd64.tar.gz
+    tar xzf prometheus-2.35.0.linux-amd64.tar.gz
+    mv prometheus-2.35.0.linux-amd64/ prometheus/
+    rm prometheus-2.35.0.linux-amd64.tar.gz
+    sudo nano 
+    
+ La fenêtre d'éditeur de texte "nano" s'ouvre. On copie ceci :
+ 
+ ``
+ [Unit]
+Description=Prometheus Server
+Documentation=https://prometheus.io/docs/introduction/overview/
+After=network-online.target
+
+[Service]
+User=pi
+Restart=on-failure
+
+ExecStart=/home/pi/prometheus/prometheus \
+  --config.file=/home/pi/prometheus/prometheus.yml \
+  --storage.tsdb.path=/home/pi/prometheus/data
+
+[Install]
+WantedBy=multi-user.target
+``
+
+sd
