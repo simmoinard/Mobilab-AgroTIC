@@ -23,7 +23,7 @@ On se dirige ensuite dans le fichier de configuration ```settings.js```
 
     sudo nano ~/.node-red/settings.js
     
-Descendre une trentaine de lignes jusqu'à voir adminAuth. Il faut ici enlever les ```//```, puis choisir le username ainsi que le mot de passe crypté : 
+Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à la ligne n°76 pour modifier adminAuth : Il faut ici enlever les ```//``` en début de chaque ligne, puis choisir le username ainsi que le mot de passe crypté : 
 
     /** To password protect the Node-RED editor and admin API, the following
      * property can be used. See http://nodered.org/docs/security.html for details.
