@@ -60,8 +60,8 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
 ### Influx
 
-[PAS NECESSAIRE]
-    sudo apt-get update
+
+    ~~sudo apt-get update~~
     sudo apt-get upgrade
     sudo apt-get install apt-transport-https
     sudo apt-get install curl
