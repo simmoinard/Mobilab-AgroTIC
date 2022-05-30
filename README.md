@@ -1,11 +1,5 @@
 # Mobilab-AgroTIC
 
-## Change Grafana logo : 
-```
-cd /usr/share/grafana/public/img/
-```
-rename grafana_icon.svg
-Found [here](https://community.grafana.com/t/how-can-i-customize-login-page/17441/4)
 
 
 ## Ajout d'une gateway
@@ -122,6 +116,12 @@ Il faut descendre avec les flèches du clavier jusqu'a trouver "server", puis en
  
 Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
 
+## Change Grafana logo : 
+```
+cd /usr/share/grafana/public/img/
+```
+rename grafana_icon.svg
+Found [here](https://community.grafana.com/t/how-can-i-customize-login-page/17441/4)
 
 ### Prometheus
 
