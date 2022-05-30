@@ -68,7 +68,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
     tar xzf prometheus-2.35.0.linux-amd64.tar.gz
     mv prometheus-2.35.0.linux-amd64/ prometheus/
     rm prometheus-2.35.0.linux-amd64.tar.gz
-    sudo nano 
+    sudo nano /etc/systemd/system/prometheus.service   
     
  La fenêtre d'éditeur de texte "nano" s'ouvre. On copie ceci :
  
