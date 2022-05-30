@@ -80,6 +80,7 @@ Il faut enfin configurer le fichier influxdb.conf. On ouvre l'editeur de texte n
 Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enlever les 3 ```#``` comme ci-dessous : 
     ```
     [http]
+    
       # Determines whether HTTP endpoint is enabled.
       enabled = true
 
