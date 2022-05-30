@@ -73,6 +73,22 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
     sudo systemctl enable influxdb.service
     sudo systemctl start influxdb.service
 
+Il faut enfin configurer le fichier influxdb.conf. On ouvre l'editeur de texte nano :
+
+    sudo nano /etc/influxdb/influxdb.conf
+
+Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enlever les 3 ```#``` comme ci-dessous : 
+    ```
+    [http]
+      # Determines whether HTTP endpoint is enabled.
+      enabled = true
+
+      # The bind address used by the HTTP service.
+      bind-address = ":8086"
+
+      # Determines whether user authentication is enabled over HTTP/HTTPS.
+      auth-enabled = false
+      ```
 ### Grafana
 
  ~~sudo apt-get install apt-transport-https curl~~
