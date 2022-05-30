@@ -22,8 +22,31 @@ Paramétrer comme ceci :
 Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte SD dans le Raspberry, puis brancher l'alimentation du Raspberry.
 
 ### Se connecter a distance au Raspberry
-appuyer sur la touche Windows + r ![image](https://user-images.githubusercontent.com/24956276/170989133-e635ebc2-8237-4ab5-8e5d-089efeb00b25.png)
+appuyer sur la touche Windows + r 
+
+![image](https://user-images.githubusercontent.com/24956276/170989133-e635ebc2-8237-4ab5-8e5d-089efeb00b25.png)
+
+    ssh pi@192.168.104.163
+
+Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue dans le Raspberry !!
+
+### Fonctions de base : 
+
+ - ```ls``` : lister les documents présents dans le répértoire courant
+ - ```cd``` : Changer de répértoire
+ - ```cd ..``` : revenir dans le répértoire parent
+ - ```ls -l``` : lister les documents présents dans le répértoire courant avec plus d'informations (grâce au flag "-l")
+ - ```mkdir``` : Créer un dossier
+ - ```nano fichier.txt``` : Créer un fichier 'fichier.txt'. Pour sortir de l'éditeur, Ctrl+X 
+ - ```sudo reboot``` : Redémarrer le Raspberry (sudo est pour Super User DO : on se met en mode admin, après avoir renseigné le mot de passe)
 
 ## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
 
 ### NodeRed
+
+On installe via le script officiel, puis on modifie le sysyemctl pour lancer NodeRed au démarrage. 
+    bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+    sudo systemctl enable nodered.service
+    node-red-start
+    
+NodeRed est alors accessible depuis n'importe quel ordinateur dans le réseau WiFi du Raspberry ! L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
