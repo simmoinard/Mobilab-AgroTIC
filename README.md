@@ -88,6 +88,9 @@ Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enle
 
       # Determines whether user authentication is enabled over HTTP/HTTPS.
       auth-enabled = false
+ 
+Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
+
 ### Grafana
 
  ~~sudo apt-get install apt-transport-https curl~~
@@ -99,6 +102,25 @@ Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enle
     
     sudo systemctl enable grafana-server.service 
     sudo systemctl start influxdb.service
+
+Il faut enfin configurer le fichier grafana.ini. On ouvre l'editeur de texte nano :
+
+    sudo nano /etc/grafana/grafana.ini
+
+Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enlever les 3 ```#``` comme ci-dessous : 
+    
+    [server]
+    # Protocol (http, https, socket)
+    protocol = http
+
+    # The ip address to bind to, empty will bind to all interfaces
+    ;http_addr =
+
+    # The http port  to use
+    http_port = 3000
+ 
+Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
+
 
 ### Prometheus
 
