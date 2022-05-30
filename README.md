@@ -78,8 +78,9 @@ Il faut enfin configurer le fichier influxdb.conf. On ouvre l'editeur de texte n
     sudo nano /etc/influxdb/influxdb.conf
 
 Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enlever les 3 ```#``` comme ci-dessous : 
-    ```[http]```
-    
+
+
+    ```[http]
       # Determines whether HTTP endpoint is enabled.
       enabled = true
 
@@ -87,7 +88,7 @@ Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enle
       bind-address = ":8086"
 
       # Determines whether user authentication is enabled over HTTP/HTTPS.
-      auth-enabled = false
+      auth-enabled = false```
  
 Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
 
