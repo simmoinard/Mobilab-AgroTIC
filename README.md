@@ -43,10 +43,12 @@ Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue d
 ## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
 
 ### NodeRed
-On installe via le script officiel, puis on modifie le sysyemctl pour lancer NodeRed au démarrage. 
+
+On installe via le script officiel, puis on modifie le sysyemctl pour lancer NodeRed au démarrage. Enfin, on lance node-red : 
 
     bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
     sudo systemctl enable nodered.service
     node-red-start
     
-NodeRed est alors accessible depuis n'importe quel ordinateur dans le réseau WiFi du Raspberry ! L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
+NodeRed est alors accessible depuis n'importe quel ordinateur dans le réseau WiFi du Raspberry ! 
+L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
