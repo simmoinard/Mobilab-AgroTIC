@@ -66,11 +66,16 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
     wget https://github.com/prometheus/prometheus/releases/download/v2.35.0/prometheus-2.35.0.linux-amd64.tar.gz
     tar xzf prometheus-2.35.0.linux-amd64.tar.gz
+ On nettoie ensuite l'installation :
+ 
     mv prometheus-2.35.0.linux-amd64/ prometheus/
     rm prometheus-2.35.0.linux-amd64.tar.gz
+ 
+ Comme avec NodeRed, on va créer un service qui va lancer prometheus au démarrage :
+ 
     sudo nano /etc/systemd/system/prometheus.service   
     
- La fenêtre d'éditeur de texte "nano" s'ouvre. On copie ceci :
+ La fenêtre d'éditeur de texte "nano" s'ouvre. On copie ceci (clic-droit pour coller dans nano) :
  
  ```
  [Unit]
