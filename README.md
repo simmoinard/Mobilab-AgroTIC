@@ -24,8 +24,6 @@ Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte
 ### Se connecter a distance au Raspberry
 appuyer sur la touche ```Windows``` + ```R``` puis entrer ```cmd``` dans la barre de recherche
 
-![image](https://user-images.githubusercontent.com/24956276/170989133-e635ebc2-8237-4ab5-8e5d-089efeb00b25.png)
-
     ssh pi@192.168.104.163
 
 Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue dans le Raspberry !!
