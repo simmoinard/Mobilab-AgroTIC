@@ -72,7 +72,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
     
  La fenêtre d'éditeur de texte "nano" s'ouvre. On copie ceci :
  
- ``
+ ```
  [Unit]
 Description=Prometheus Server
 Documentation=https://prometheus.io/docs/introduction/overview/
@@ -88,6 +88,6 @@ ExecStart=/home/pi/prometheus/prometheus \
 
 [Install]
 WantedBy=multi-user.target
-``
+```
 
 sd
