@@ -64,7 +64,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
     sudo apt-get upgrade
     sudo apt-get install apt-transport-https
     sudo apt-get install curl
-    curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+    curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -~~
     
     echo "deb https://repos.influxdata.com/debian stretch stable" | sudo tee /etc/apt/sources.list.d/influxdb.list 
     sudo apt-get update
@@ -75,7 +75,7 @@ L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
 ### Grafana
 
- ~~sudo apt-get install apt-transport-https curl
+ ~~sudo apt-get install apt-transport-https curl~~
  
     curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
     echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
