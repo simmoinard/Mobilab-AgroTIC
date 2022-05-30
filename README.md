@@ -41,16 +41,6 @@ On commence toujours pas mettre à jour son Raspberry avant de commencer à inst
     sudo apt update
     sudo apt full-upgrade
 
-### NodeRed
-
-On installe via le script officiel, puis on modifie le sysyemctl pour lancer NodeRed au démarrage. Enfin, on lance node-red : 
-
-    bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
-    sudo systemctl enable nodered.service
-    node-red-start
-    
-NodeRed est alors accessible depuis n'importe quel ordinateur dans le réseau WiFi du Raspberry ! 
-L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
 ### Influx
 
