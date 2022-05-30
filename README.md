@@ -58,6 +58,38 @@ On installe via le script officiel, puis on modifie le sysyemctl pour lancer Nod
 NodeRed est alors accessible depuis n'importe quel ordinateur dans le réseau WiFi du Raspberry ! 
 L'adresse URL est [IP]:1880 (par exemple, 192.168.104.163:1880)
 
+### Influx
+
+[PAS NECESSAIRE]
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install apt-transport-https
+    sudo apt-get install curl
+    curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+    
+    echo "deb https://repos.influxdata.com/debian stretch stable" | sudo tee /etc/apt/sources.list.d/influxdb.list 
+    sudo apt-get update
+    sudo apt-get install influxdb
+    
+    sudo systemctl enable influxdb.service
+    sudo systemctl start influxdb.service
+
+### Grafana
+
+ [PAS NECESSAIRE]
+
+ sudo apt-get install apt-transport-https curl
+ 
+    curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
+    echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+    sudo apt-get update
+    sudo apt-get install grafana
+    
+    sudo systemctl enable grafana-server.service 
+    sudo systemctl start influxdb.service
+
+
+
 ### Prometheus
 
 [Prometheus](https://prometheus.io/download/) est une base de données temporelle. La suite est prise de ce [site](https://pimylifeup.com/raspberry-pi-prometheus/)
