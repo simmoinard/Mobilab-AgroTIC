@@ -47,9 +47,9 @@ Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à 
  
 Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
 
-A partir de maintenant, on peut aller sur la page Grafana depuis un navigateur classique (Chrome, Friefox, etc) via l'adresse [http://raspberrypi.local:3000](http://raspberrypi.local:3000)
-
 ## Première connexion à Grafana : 
+
+A partir de maintenant, on peut aller sur la page Grafana depuis un navigateur classique (Chrome, Firefox, etc) via l'adresse [http://raspberrypi.local:3000](http://raspberrypi.local:3000)
 
 Sur la page de démarrage, l'username et password sont ```admin``` et ```admin```. Il vous est alors demandé de choisir un nouveau mot de passe (à conserver pour la suite !)
 
