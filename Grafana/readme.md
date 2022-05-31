@@ -3,6 +3,13 @@
 
 Grafana est un logiciel qui permet de visualiser les données issues d'une base de données (comme Influx). 
 
+Note : Il faut d'abord se connecter en SSH au Raspberry pour pouvoir écrire les lignes de commandes de ce tuto.
+
+On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels :
+
+    sudo apt update
+    sudo apt full-upgrade
+
 ## Installation de Grafana
  ~~sudo apt-get install apt-transport-https curl~~
  
