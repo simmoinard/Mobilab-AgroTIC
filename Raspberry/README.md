@@ -40,4 +40,9 @@ Note : L'auto-complétion se fait en appuyant sur tab. C'est très pratique : pa
 
 ## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
 
+Dans le mobilab AgroTIC, plusieurs logiciels sont très utilisés : 
+
+- NodeRed pour connecter des objets a des programmes : [tuto d'installation](https://github.com/simmoinard/Mobilab-AgroTIC/blob/main/Raspberry/NodeRed/README.md)
+- InfluxDB pour stocker les données dans une base : [tuto d'installation](https://github.com/simmoinard/Mobilab-AgroTIC/blob/main/Raspberry/InfluxDB/README.md)
+- Grafana pour visualiser ces données : [tuto d'installation](https://github.com/simmoinard/Mobilab-AgroTIC/blob/main/Raspberry/Grafana/README.md)
 
