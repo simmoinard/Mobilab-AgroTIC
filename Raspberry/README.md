@@ -29,7 +29,11 @@ appuyer sur la touche ```Windows```+```R``` puis entrer ```cmd``` dans la barre 
 
 (note : la commande est ```username```@```hostname``` comme ils ont été défini plus haut au moment du flash de la carte SD)
 
-S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en scannant le réseau via l'application Network Analyser sur telephone.
+S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en tapant 
+
+    arp -a
+    
+L'une des adresses affichées en 'dynamique' est celle du Rasbperry. De façon générale, les adresses physiques des Raspberry commencent toujours par e4-5f ou 
 
     ssh pi@192.168.104.163
 
