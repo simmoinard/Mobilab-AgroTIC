@@ -48,9 +48,9 @@ Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à 
 Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
 
 ## Changer le logo Grafana : 
-```
-cd /usr/share/grafana/public/img/
 
-```
-renomer grafana_icon.svg
+    cd /usr/share/grafana/public/img/
+
+Puis renommer grafana_icon.svg
+
 Found [here](https://community.grafana.com/t/how-can-i-customize-login-page/17441/4)
