@@ -3,8 +3,11 @@
 Raspberry est un petit ordinateur monocarte. Il permet d'automatiser plein de systèmes, visualiser des données, etc. 
 
 ## Flasher une carte SD pour Raspberry
+
+Insérer la carte SD dans l'ordinateur.
 Télécharger [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
-Paramétrer comme ceci : 
+
+Ouvrir ce logiciel puis choisir le premier OS ainsi que la carte SD. Cliquer ensuite sur l'engrenage et paramétrer comme ceci : 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/170987045-2e109392-74fc-4108-ad41-e181b20df4a6.png">
