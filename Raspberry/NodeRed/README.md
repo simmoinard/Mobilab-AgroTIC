@@ -1,6 +1,6 @@
 # NodeRed
 
-NodeRed est un puissant outil No Code permettant de faire des liens entre plusieurs "Nodes". 
+NodeRed est un puissant outil NoCode permettant de faire des liens entre plusieurs "Nodes", permettant ainsi de connecter des capteurs et de récupérer leurs données. 
 
 Note : Il faut d'abord se connecter en SSH au Raspberry pour pouvoir écrire les lignes de commandes de ce tuto.
 
