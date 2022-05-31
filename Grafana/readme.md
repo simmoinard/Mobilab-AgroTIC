@@ -18,8 +18,8 @@ Il faut enfin configurer le fichier grafana.ini. On ouvre l'editeur de texte nan
 
     sudo nano /etc/grafana/grafana.ini
 
-Il faut descendre avec les flèches du clavier jusqu'a trouver "server", puis enlever les 2 ```;``` comme ci-dessous : 
-    
+Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à la ligne n°33 pour modifier la balise [server] : Il faut ici enlever les ```;``` en début de ligne, comme ceci : 
+
     [server]
     # Protocol (http, https, socket)
     protocol = http
