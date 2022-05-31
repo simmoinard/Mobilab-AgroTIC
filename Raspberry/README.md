@@ -47,7 +47,7 @@ Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue d
 
 ### Fonctions de base : 
 
-Dans cette fenêtre noire, on peut entrer une multitude de commandes. On peut essayer les suivante : 
+Dans cette fenêtre noire, on peut entrer une multitude de commandes. On peut essayer les suivantes : 
  - ```ls``` : lister les documents présents dans le répértoire courant
  - ```cd``` : Changer de répértoire
  - ```cd ..``` : revenir dans le répértoire parent
