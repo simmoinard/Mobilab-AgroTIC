@@ -18,6 +18,10 @@ Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte
 ### Se connecter a distance au Raspberry
 appuyer sur la touche ```Windows``` + ```R``` puis entrer ```cmd``` dans la barre de recherche
 
+    ssh pi@raspberrypi.local
+
+Note : si il est marqué 'l"hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en scannant le réseau
+
     ssh pi@192.168.104.163
 
 Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue dans le Raspberry !!
@@ -37,42 +41,6 @@ L'auto-complétion se fait en appuyant sur tab. C'est très pratique.
 ## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
 
 
-### Grafana
-
- ~~sudo apt-get install apt-transport-https curl~~
- 
-    curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
-    echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
-    sudo apt-get update
-    sudo apt-get install grafana
-    
-    sudo systemctl enable grafana-server.service 
-    sudo systemctl start influxdb.service
-
-Il faut enfin configurer le fichier grafana.ini. On ouvre l'editeur de texte nano :
-
-    sudo nano /etc/grafana/grafana.ini
-
-Il faut descendre avec les flèches du clavier jusqu'a trouver "server", puis enlever les 2 ```;``` comme ci-dessous : 
-    
-    [server]
-    # Protocol (http, https, socket)
-    protocol = http
-
-    # The ip address to bind to, empty will bind to all interfaces
-    ;http_addr =
-
-    # The http port  to use
-    http_port = 3000
- 
-Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
-
-## Change Grafana logo : 
-```
-cd /usr/share/grafana/public/img/
-```
-rename grafana_icon.svg
-Found [here](https://community.grafana.com/t/how-can-i-customize-login-page/17441/4)
 
 ### Prometheus
 
