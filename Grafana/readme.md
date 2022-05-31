@@ -5,23 +5,31 @@ Grafana est un logiciel qui permet de visualiser les données issues d'une base 
 
 Note : Il faut d'abord se connecter en SSH au Raspberry pour pouvoir écrire les lignes de commandes de ce tuto.
 
-On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels :
-
-    sudo apt update
-    sudo apt full-upgrade
-
 ## Installation de Grafana
  ~~sudo apt-get install apt-transport-https curl~~
  
+ On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels :
+
+    sudo apt update
+    sudo apt full-upgrade
+  
+ On ajoute un répertoire à aller checker lors des prochains updates
+ 
     curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
     echo "deb https://dl.bintray.com/fg2it/deb stretch main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+ 
+ On met à jour et on installe Grafana 
+ 
     sudo apt-get update
     sudo apt-get install grafana
-    
+ On active Grafana au démarrage du Raspberry et on le démarre
+ 
     sudo systemctl enable grafana-server.service 
     sudo systemctl start influxdb.service
 
-Il faut enfin configurer le fichier grafana.ini. On ouvre l'editeur de texte nano :
+## Paramétrage de Grafana
+
+Il faut configurer le fichier grafana.ini. On ouvre l'editeur de texte nano :
 
     sudo nano /etc/grafana/grafana.ini
 
