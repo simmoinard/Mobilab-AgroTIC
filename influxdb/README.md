@@ -1,7 +1,9 @@
 # Influx
 
+Influxdb est une base de données temporelle, qui permet de stocker les données de capteurs etc.
+Note : Il faut d'abord se connecter en SSH au Raspberry pour pouvoir écrire les lignes de commandes de ce tuto.
 
-On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels.
+On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels :
 
     sudo apt update
     sudo apt full-upgrade
@@ -23,8 +25,7 @@ Il faut enfin configurer le fichier influxdb.conf. On ouvre l'editeur de texte n
 
     sudo nano /etc/influxdb/influxdb.conf
 
-Il faut descendre avec les flèches du clavier jusqu'a trouver "http", puis enlever les 3 ```#``` comme ci-dessous : 
-
+Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à la ligne n°249 pour modifier la balise [HTTP] : Il faut ici enlever les ```#``` en début de 3 lignes, comme ceci : 
 
     [http]
       # Determines whether HTTP endpoint is enabled.
