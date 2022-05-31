@@ -3,6 +3,8 @@
 Influxdb est une base de données temporelle, qui permet de stocker les données de capteurs etc.
 Note : Il faut d'abord se connecter en SSH au Raspberry pour pouvoir écrire les lignes de commandes de ce tuto.
 
+## Installation de Influx
+
 On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels :
 
     sudo apt update
@@ -21,6 +23,7 @@ On commence toujours pas mettre à jour son Raspberry avant de commencer à inst
     sudo systemctl enable influxdb.service
     sudo systemctl start influxdb.service
 
+## Configuration de Influx
 Il faut enfin configurer le fichier influxdb.conf. On ouvre l'editeur de texte nano :
 
     sudo nano /etc/influxdb/influxdb.conf
