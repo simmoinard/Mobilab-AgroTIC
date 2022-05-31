@@ -6,10 +6,10 @@ Raspberry est un petit ordinateur monocarte. Il permet d'automatiser plein de sy
 Télécharger [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 Paramétrer comme ceci : 
 
-![image](https://user-images.githubusercontent.com/24956276/170987045-2e109392-74fc-4108-ad41-e181b20df4a6.png)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/24956276/170987045-2e109392-74fc-4108-ad41-e181b20df4a6.png">
 </p>
+
 Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte SD dans le Raspberry, puis brancher l'alimentation du Raspberry.
 
 ## Se connecter en SSH au Raspberry dans un réseau local
