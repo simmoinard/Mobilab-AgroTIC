@@ -20,7 +20,7 @@ appuyer sur la touche ```Windows```+```R``` puis entrer ```cmd``` dans la barre 
 
     ssh pi@raspberrypi.local
 
-la commande est ```username```@```hostname``` comme ils ont été défini plus haut au moment du flash de la carte SD.
+(note : la commande est ```username```@```hostname``` comme ils ont été défini plus haut au moment du flash de la carte SD)
 
 S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en scannant le réseau via l'application Network Analyser sur telephone.
 
