@@ -5,42 +5,6 @@
 ## Ajout d'une gateway
 https://docs.google.com/document/d/15u7gVZ0O7rmBvpWaHETV42GnluCNkuVWq6kZX1yau00/edit
 
-# Raspberry
-
-## Flasher une carte SD pour Raspberry
-Télécharger [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
-Paramétrer comme ceci : 
-
-![image](https://user-images.githubusercontent.com/24956276/170987045-2e109392-74fc-4108-ad41-e181b20df4a6.png)
-
-Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte SD dans le Raspberry, puis brancher l'alimentation du Raspberry.
-
-### Se connecter a distance au Raspberry
-appuyer sur la touche ```Windows``` + ```R``` puis entrer ```cmd``` dans la barre de recherche
-
-    ssh pi@raspberrypi.local
-
-Note : si il est marqué 'l"hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en scannant le réseau
-
-    ssh pi@192.168.104.163
-
-Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue dans le Raspberry !!
-
-### Fonctions de base : 
-
-L'auto-complétion se fait en appuyant sur tab. C'est très pratique.
-
- - ```ls``` : lister les documents présents dans le répértoire courant
- - ```cd``` : Changer de répértoire
- - ```cd ..``` : revenir dans le répértoire parent
- - ```ls -l``` : lister les documents présents dans le répértoire courant avec plus d'informations (grâce au flag "-l")
- - ```mkdir``` : Créer un dossier
- - ```nano fichier.txt``` : Créer un fichier 'fichier.txt'. Pour sortir de l'éditeur, ```Ctrl```+```X```, puis ```Y```, puis ```Entrée``` 
- - ```sudo reboot``` : Redémarrer le Raspberry (sudo est pour Super User DO : on se met en mode admin, après avoir renseigné le mot de passe)
-
-## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
-
-
 
 ### Prometheus
 
