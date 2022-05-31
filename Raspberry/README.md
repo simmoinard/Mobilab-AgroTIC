@@ -38,7 +38,7 @@ Dans cette fenêtre noire, on peut entrer une multitude de commandes. On peut es
  - ```sudo reboot``` : Redémarrer le Raspberry (sudo est pour Super User DO : on se met en mode admin, après avoir renseigné le mot de passe)
  - ```ifconfig``` : Redémarrer le Raspberry (sudo est pour Super User DO : on se met en mode admin, après avoir renseigné le mot de passe)
 
-Note : L'auto-complétion se fait en appuyant sur tab. C'est très pratique : par exemple, pour la commande ```ifconfig``` on peut taper ```if``` puis double ```tab``` pour voir toutes les propositions. S'il ne reste qu'une proposition (par exemple en tapant ```ifc``` puis un ```tab```), l'autocomplétion va se faire et il n'est pas nécessaire de terminer la commande !
+Note : L'auto-complétion se fait en appuyant sur la touche ```tab```. C'est très pratique : par exemple, pour la commande ```ifconfig``` on peut taper ```if``` puis double ```tab``` pour voir toutes les propositions. S'il ne reste qu'une proposition (par exemple en tapant ```ifc``` puis un ```tab```), l'autocomplétion va se faire et il n'est pas nécessaire de terminer la commande !
 
 ## Installer un serveur NodeRed / Grafana / Influx sur Raspberry
 
