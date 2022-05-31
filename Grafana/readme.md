@@ -1,5 +1,5 @@
 
-### Grafana
+# Grafana
 
  ~~sudo apt-get install apt-transport-https curl~~
  
@@ -29,9 +29,10 @@ Il faut descendre avec les flèches du clavier jusqu'a trouver "server", puis en
  
 Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
 
-## Change Grafana logo : 
+## Changer le logo Grafana : 
 ```
 cd /usr/share/grafana/public/img/
+
 ```
-rename grafana_icon.svg
+renomer grafana_icon.svg
 Found [here](https://community.grafana.com/t/how-can-i-customize-login-page/17441/4)
