@@ -33,7 +33,7 @@ S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP
 
     arp -a
     
-L'une des adresses affichées en 'dynamique' est celle du Rasbperry. De façon générale, les adresses physiques des Raspberry commencent toujours par ```e4-5f``` ou ```b8:27```
+L'une des adresses affichées en 'dynamique' est celle du Rasbperry. De façon générale, les adresses physiques des Raspberry commencent toujours par ```e4-5f```, ```cd-a6``` ou ```b8:27```
 
     ssh pi@192.168.104.163
 
