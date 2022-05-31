@@ -1,6 +1,9 @@
 
 # Grafana
 
+Grafana est un logiciel qui permet de visualiser les données issues d'une base de données (comme Influx). 
+
+## Installation de Grafana
  ~~sudo apt-get install apt-transport-https curl~~
  
     curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
