@@ -41,7 +41,7 @@ Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à 
 
 ## Installer un plugin NodeRed
 
-Les plugins de NodeRed sont disponibles dans la "palette" située dans le menu (3 barres horizontales en haut à droite), puis dans Manage Palette (accessible également via le raccourci ```Alt``` + ```↑``` + ```P```). Il faut ensuite cliquer sur l'onglet Install pour installer un nouveau Node.
+Les plugins de NodeRed sont disponibles dans la "palette" située dans le menu (3 barres horizontales en haut à droite), puis dans Manage Palette (accessible également via le raccourci ```Alt``` + ```↑``` + ```P```). Il faut ensuite cliquer sur l'onglet Install pour installer un nouveau module.
 
 Les modules commencent toujours par node-red-contrib. Les plus utilisés dans les projets du mobilab AgroTIC : 
 
