@@ -16,9 +16,11 @@ Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte
 
 Important : il faut que l'ordinateur et le Raspberry soient connectés au même réseau ! Le Raspberry s'est connecté automatiquement au réseau Wifi renseigné avec Raspberry Pi Imager. Il faut maintenant que l'ordinateur soit également dans ce réseau !
 
-appuyer sur la touche ```Windows```+```R``` puis entrer ```cmd``` dans la barre de recherche
+appuyer sur la touche ```Windows```+```R``` puis entrer ```cmd``` dans la barre de recherche, puis entrer 
 
     ssh pi@raspberrypi.local
+
+la commande est ```username```@```hostname``` comme ils ont été défini plus haut au moment du flash de la carte SD.
 
 S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en scannant le réseau via l'application Network Analyser sur telephone.
 
