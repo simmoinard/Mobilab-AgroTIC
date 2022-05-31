@@ -1,9 +1,9 @@
-# Influx
+# InfluxDB
 
-Influxdb est une base de données temporelle, qui permet de stocker les données de capteurs etc.
+InfluxDB est une base de données temporelle, qui permet de stocker les données de capteurs etc.
 Note : Il faut d'abord se connecter en SSH au Raspberry pour pouvoir écrire les lignes de commandes de ce tuto.
 
-## Installation de Influx
+## Installation de InfluxDB
 
 On commence toujours pas mettre à jour son Raspberry avant de commencer à installer des logiciels :
 
