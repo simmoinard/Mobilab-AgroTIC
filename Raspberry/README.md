@@ -35,6 +35,12 @@ S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP
     
 L'une des adresses affichées en 'dynamique' est celle du Rasbperry. De façon générale, les adresses physiques des Raspberry commencent toujours par ```e4-5f-01```, ```DC-A6-32```, ```B8-27-EB``` ou ```28-CD-C1```
 
+<p align="center">
+  <img src="[https://user-images.githubusercontent.com/24956276/170987045-2e109392-74fc-4108-ad41-e181b20df4a6.png](https://user-images.githubusercontent.com/24956276/171141408-7703d013-2f3f-4543-9d85-f77c418300b1.png)">
+</p>
+
+D'après l'image, l'adresse IP que je cherche est donc ```192.168.104.163```. La commande a utiliser est donc : 
+
     ssh pi@192.168.104.163
 
 Le mot de passe est demandé (il a été paramétré au préalable). Bienvenue dans le Raspberry !!
