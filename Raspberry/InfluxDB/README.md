@@ -41,3 +41,14 @@ Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à 
       auth-enabled = false
  
 Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
+
+## Ma première base de données
+
+**InfluxDB** peut contenir plusieurs **bases de données** (une par projet par exemple), et chaque base peut contenir plusieurs **mesurements** (plusieurs types de capteurs par exemple).
+
+On lance influx pour créer une base de données nommée "mydb" : 
+
+    influx
+    create database mydb
+    
+La base est maintenant créée ! On va la remplir via NodeRed
