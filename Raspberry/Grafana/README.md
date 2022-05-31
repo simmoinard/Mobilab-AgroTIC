@@ -49,7 +49,12 @@ Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entr�
 
 A partir de maintenant, on peut aller sur la page Grafana depuis un navigateur classique (Chrome, Friefox, etc) via l'adresse [http://raspberrypi.local:3000](http://raspberrypi.local:3000)
 
-## Changer le logo Grafana : 
+## Première connexion à Grafana : 
+
+Sur la page de démarrage, l'username et password sont ```admin``` et ```admin```. Il vous est alors demandé de choisir un nouveau mot de passe (à conserver pour la suite !)
+
+## Autres
+### Changer le logo Grafana : 
 
     cd /usr/share/grafana/public/img/
 
