@@ -47,7 +47,7 @@ Appuyez sur ```Alt```+```C``` pour afficher le numéro des lignes. Descendre à 
  
 Pour sortir de l'éditeur nano , ```Ctrl```+```X```, puis ```Y```, puis ```Entrée```
 
-à partir de maintenant, on peut aller sur la page Grafana depuis un navigateur classique (Chrome, Friefox, etc) via l'adresse ```raspberrypi.local:3000```
+à partir de maintenant, on peut aller sur la page Grafana depuis un navigateur classique (Chrome, Friefox, etc) via l'adresse [raspberrypi.local:3000]
 
 ## Changer le logo Grafana : 
 
