@@ -10,6 +10,13 @@ Paramétrer comme ceci :
   <img src="https://user-images.githubusercontent.com/24956276/170987045-2e109392-74fc-4108-ad41-e181b20df4a6.png">
 </p>
 
+- ```Set Hostname``` permet de définir le nom du Raspberry (ici raspberrypi.local)
+- ```Enable SSH``` permet de se connecter à distance au Raspberry
+- ```set username and password``` permet de définir un nom d'utilisateur et un mot de passe. Ici, le ```Username``` est pi. Le mot de passe vous sera demandé plusieurs fois dans la suite des tutoriels.
+- ```Configure Wireless LAN``` : cette partie permet de se connecter directement à un réseau WiFi. Le ```SSID``` est le nom du WiFi et ```password``` le mot de passe
+- ```Wireless LAN Country``` est optionnel
+- ```Set locale settings``` est optionnel
+
 Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte SD dans le Raspberry, puis brancher l'alimentation du Raspberry.
 
 ## Se connecter en SSH au Raspberry dans un réseau local
