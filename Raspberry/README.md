@@ -16,7 +16,7 @@ Lancer l'écriture et patienter jusqu'a 2 min. Vous pouvez enfin mettre la carte
 
 Important : il faut que l'ordinateur et le Raspberry soient connectés au même réseau ! Le Raspberry s'est connecté automatiquement au réseau Wifi renseigné avec Raspberry Pi Imager. Il faut maintenant que l'ordinateur soit également dans ce réseau !
 
-appuyer sur la touche ```Windows``` + ```R``` puis entrer ```cmd``` dans la barre de recherche
+appuyer sur la touche ```Windows```+```R``` puis entrer ```cmd``` dans la barre de recherche
 
     ssh pi@raspberrypi.local
 
