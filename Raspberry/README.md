@@ -32,8 +32,9 @@ appuyer sur la touche ```Windows```+```R``` puis entrer ```cmd``` dans la barre 
 
 (note : la commande est ```username```@```hostname``` comme ils ont été défini plus haut au moment du flash de la carte SD)
 
-S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en tapant 
+S'il est marqué 'l'hôte est introuvable', il faut plutot chercher l'adresse IP du raspberry. On peut la trouver en tapant :
 
+    for /L %a in (1,1,254) do start ping 192.168.1.%a
     arp -a
     
 L'une des adresses Internet (ou IP) affichées de type 'dynamique' est celle du Rasbperry. De façon générale, les adresses physiques des Raspberry commencent toujours par ```e4-5f-01```, ```DC-A6-32```, ```B8-27-EB``` ou ```28-CD-C1```. Il faut donc faire le lien pour retrouver l'adresse IP.
